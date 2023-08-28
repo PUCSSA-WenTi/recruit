@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Auto-play YouTube Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>? ? O.o ? ?</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #contentContainer {
+            text-align: center;
+            width: 100vw; /* Set container width to full viewport width */
+            height: calc(100vh - 100px); /* Adjust container height for text and margins */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centered {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px; /* Adjust font size */
+            margin-bottom: 20px; /* Increase margin for better spacing */
+            width: 100%; /* Element width fills the container */
+            max-height: 100%; /* Maintain element's aspect ratio */
+        }
+    </style>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <div id="contentContainer">
+        <p class="centered">啊？你要给我打钱？尊都假都哦。O.o</p>
+        <video class="centered" controls muted autoplay>
+            <source src="src/neverGonnaGiveUUp.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
 </html>
